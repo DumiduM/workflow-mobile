@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+  <android.support.v4.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+<android.support.v7.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_centerHorizontal="true"
+    android:layout_marginRight="24dp"
+    android:layout_marginLeft="24dp">
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_marginBottom="30dp"
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:text="@string/forget_your_password"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="13sp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="@string/recover_text"
+        android:textAlignment="center" />
+    <EditText
+        android:drawableStart="@drawable/email"
+        android:textColorHint="@color/colorTextinput"
+        android:id="@+id/editText2"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextinput"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:paddingLeft="10dip"
+        android:background="@drawable/edit_text"
+        android:hint=" Enter the recovery Email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="viewStart" />
+
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/repple_effect_login"
+        android:fontFamily="@font/poppinsbold"
+        android:textAllCaps="false"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/effect_back"
+        android:fontFamily="@font/poppinsbold"
+        android:text="@string/back_to_login"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</android.support.v7.widget.LinearLayoutCompat>
+  </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>
+
+
